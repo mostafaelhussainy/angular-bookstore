@@ -1,0 +1,22 @@
+.mx-a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.none {
+  display: none !important;
+}
+
+.btn-disabled {
+  pointer-events: none;
+}

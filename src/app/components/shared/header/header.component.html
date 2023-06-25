@@ -1,0 +1,18 @@
+<header>
+  <h2>
+    Acore admin dashboard
+  </h2>
+  <button class="dropdown" (click)="toggleDropdown()">
+    Super Admin
+    <ul [hidden]="isDropdownOpen">
+      <li>
+        {{ loggedInUser }}
+      </li>
+      <li (click)="logout()">
+        <a>
+          Logout
+        </a>
+      </li>
+    </ul>
+  </button>
+</header>

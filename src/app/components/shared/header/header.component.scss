@@ -1,0 +1,43 @@
+@import '../../../styles/helper';
+
+header {
+  background-color: #FFF;
+  padding: 0.5rem 1rem;
+  @include flex(space-between, center, row);
+  width: calc(100% - 250px);
+  margin-left: 250px;
+
+  .dropdown {
+    position: relative;
+    cursor: pointer;
+    color: #3b3b3b;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    font-weight: 400;
+
+    ul {
+      background-color: #FFF;
+      display: none;
+      position: absolute;
+      inset: 25px 0px auto auto;
+      padding: 0.4rem 1rem;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+
+      &[hidden] {
+        display: block;
+      }
+
+      a {
+        color: #000;
+        text-align: left;
+        display: block;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<app-aside></app-aside>
+<app-header></app-header>
+<main id="books">
+  <h1>Books</h1>
+  <div class="row">
+    <input type="text" [(ngModel)]="searchTitle"
+      placeholder="Search">
+    <button class="btn--main" (click)="addBook()">Add
+      Book</button>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Book Title</th>
+        <th>Book Category</th>
+        <th>Book Author</th>
+        <th>Book ISBN</th>
+        <th>Book Version</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of filteredBooks">
+        <td>{{ book.title }}</td>
+        <td>{{ book.category }}</td>
+        <td>{{ book.author }}</td>
+        <td>{{ book.isbn }}</td>
+        <td>{{ book.version }}</td>
+        <td>
+          <button (click)="viewBook(book.id)">View</button>
+          <button (click)="editBook(book.id)">Edit</button>
+          <button
+            (click)="deleteBook(book.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</main>

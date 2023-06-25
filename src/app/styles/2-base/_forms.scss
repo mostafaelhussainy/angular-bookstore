@@ -1,0 +1,42 @@
+/* L A B E L */
+label {
+  /*BOX*/
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/******************************************/
+/* I N P U T */
+input {
+  /*FONT*/
+  font-size: 1rem;
+  background-color: #F2F5FA;
+  /*BOX*/
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  /*APPEARANCE*/
+  color: #000;
+
+  &::placeholder {
+    /*FONT*/
+    font-size: 0.8rem;
+    /*APPEARANCE*/
+    color: #3b3b3b98;
+  }
+}
+
+/******************************************/
+/* S E L E C T */
+select {
+  /*APPEARANCE*/
+  /*BOX*/
+  /* FONT */
+}
+
+
+textarea {
+  /*BOX*/
+  /*COLORS*/
+  /*FONT*/
+}

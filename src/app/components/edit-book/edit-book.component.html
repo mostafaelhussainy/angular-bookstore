@@ -1,0 +1,32 @@
+<app-aside></app-aside>
+<app-header></app-header>
+<main>
+  <h1>Edit Book</h1>
+  <form (ngSubmit)="updateBook()">
+    <label>
+      <input type="text" name="title"
+        placeholder="Book title" [(ngModel)]="book.title"
+        required>
+    </label>
+    <label>
+      <input type="text" name="author"
+        placeholder="Book author" [(ngModel)]="book.author"
+        required>
+    </label>
+    <label>
+      <input type="text" name="category"
+        placeholder="Categories" [(ngModel)]="book.category"
+        required>
+    </label>
+    <label>
+      <input type="text" name="isbn" placeholder="Book isbn"
+        [(ngModel)]="book.isbn" required>
+    </label>
+    <label>
+      <input type="text" name="version"
+        placeholder="Book version"
+        [(ngModel)]="book.version" required>
+    </label>
+    <button class="btn--main" type="submit">Update</button>
+  </form>
+</main>

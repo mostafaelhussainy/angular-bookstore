@@ -1,0 +1,37 @@
+<main id="login">
+  <div class=" container">
+    <form (ngSubmit)="login()">
+      <p>
+        Please enter your email address and password to
+        access your account
+      </p>
+      <label>
+        <input type="email" name="email" [(ngModel)]="email"
+          placeholder="Email address" required>
+        <div *ngIf="emailInvalid && emailTouched"
+          class="error">
+          Please enter a valid email format
+        </div>
+      </label>
+      <label>
+        <input [type]="showPassword ? 'text' : 'password'"
+          name="password" [(ngModel)]="password"
+          placeholder="Password" required>
+        <div *ngIf="passwordInvalid && passwordTouched"
+          class="error">This field is required</div>
+        <button type="button"
+          (click)="togglePasswordVisibility()"
+          class="password-toggle">
+          {{ showPassword ? 'Hide' : 'Show' }}
+        </button>
+      </label>
+      <a>Forgot Password?</a>
+      <button class="btn--main" type="submit">Sign
+        In</button>
+    </form>
+    <figure>
+      <img src="../../../assets/bookshelf.jpg"
+        alt="bookshelf">
+    </figure>
+  </div>
+</main>

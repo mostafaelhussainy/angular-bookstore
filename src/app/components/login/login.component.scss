@@ -1,0 +1,66 @@
+@import '../../styles/helper';
+
+body {
+  position: relative;
+}
+
+#login .container {
+  @include flex(space-between, center, row);
+  @include center;
+  overflow: hidden;
+  background-color: #FFF;
+  border-radius: 20px;
+
+  form {
+    width: 55%;
+
+    @include respond-to(lg) {
+      width: 100%;
+    }
+
+    padding: 0 2rem;
+
+    p {
+      color: #3b3b3b;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      position: relative;
+
+      button {
+        position: absolute;
+        top: 50%;
+        right: 0.7rem;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #3b3b3b;
+      }
+    }
+
+    a {
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  figure {
+    width: 45%;
+    overflow: hidden;
+    position: relative;
+    min-height: 400px;
+
+    @include respond-to(lg) {
+      display: none;
+    }
+
+    img {
+      position: absolute;
+      inset: 0 0 0 0;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+/* I M P O R T E D   O N   E V E R Y   S C S S   F I L E */
+@import './app/styles/1-abstracts/breakpoints';
+@import './app/styles/1-abstracts/functions';
+@import './app/styles/1-abstracts/mixins';
+@import './app/styles/1-abstracts/variables';
+
+/* B A S E */
+@import './app/styles/2-base/animations';
+@import './app/styles/2-base/forms';
+@import './app/styles/2-base/base';
+@import './app/styles/2-base/normalize';
+@import './app/styles/2-base/typography';
+
+/* C O M P O N E N T S */
+@import './app/styles/3-components/btns';

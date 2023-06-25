@@ -1,0 +1,29 @@
+<app-aside></app-aside>
+<app-header></app-header>
+<main>
+  <h1>Book Details</h1>
+  <div *ngIf="book">
+    <div>
+      <label>Title:</label>
+      <span>{{ book.title }}</span>
+    </div>
+    <div>
+      <label>Author:</label>
+      <span>{{ book.author }}</span>
+    </div>
+    <div>
+      <label>Category:</label>
+      <span>{{ book.category }}</span>
+    </div>
+    <div>
+      <label>ISBN:</label>
+      <span>{{ book.isbn }}</span>
+    </div>
+    <div>
+      <label>Version:</label>
+      <span>{{ book.version }}</span>
+    </div>
+    <button (click)="goBack()"
+      class="btn--main">Back</button>
+  </div>
+</main>

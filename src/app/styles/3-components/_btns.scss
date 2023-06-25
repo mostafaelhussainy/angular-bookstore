@@ -1,0 +1,36 @@
+.btn--main,
+.btn--secondary,
+.btn--danger {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.btn--main {
+  color: #FFF;
+  background-color: #1738a7;
+
+  &:hover {
+    background-color: #1739a7be;
+  }
+}
+
+.btn--danger {
+  color: #FFF;
+  background-color: #ff0000;
+
+  &:hover {
+    background-color: #ff0000be;
+  }
+}
+
+.btn--secondary {
+  color: #3b3b3b;
+  background-color: #a0a0a0;
+
+  &:hover {
+    background-color: #a0a0a0be;
+  }
+}
